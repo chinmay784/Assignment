@@ -134,7 +134,6 @@ exports.getPrifile = async (req,res) =>{
 
 
 exports.uploadProfilePic = async (req, res) => {
- const aa = awa 
 
     try {
         const userId = req.user.userId; // Extract user ID from JWT

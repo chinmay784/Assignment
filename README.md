@@ -6,9 +6,11 @@ Here are the API endpoints based on your provided code:
     - **Method:** POST
     - **Endpoint:** `/register`
     - **Handler:** `register`
+    - **API:** `http://localhost:5000/api/v1/register`
 
 2. **Login User**
     - **Method:** POST
+    - **API:** `http://localhost:5000/api/v1/login`
     - **Endpoint:** `/login`
         - **Input:**  
             - **Body:**  
@@ -21,6 +23,7 @@ Here are the API endpoints based on your provided code:
         - **Endpoint:** `/profile`  
         - **Middleware:** `authMiddleWere`  
         - **Handler:** `getProfile`  
+        - **API:** `http://localhost:5000/api/v1/profile`
         - **Input:**  
             - **Headers:**  
                 - `Authorization`: Bearer token for authentication  
@@ -31,6 +34,7 @@ Here are the API endpoints based on your provided code:
         - **Middleware:** `authMiddleWere`
         - **Handler:** `uploadProfilePic`
         - **File Upload Middleware:** `upload.single("profilePic")`
+        - **API:** `http://localhost:5000/api/v1/upload-profile-pic`
         - **Input:**  
             - **Headers:**  
             - `Authorization`: Bearer token for authentication  
